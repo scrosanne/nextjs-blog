@@ -40,9 +40,12 @@
     list-style-type: none;
     padding: 3%;
     margin: 4%;
-    border: 2px solid white;
+    border: 3px solid white;
 
     display: flex;
+    justify-content: space-between;
+
+    height: 200px;
 }
 
 .postLeft {
@@ -52,7 +55,33 @@
 }
 
 .postRight {
-    background-color: #a7b5ff;
+    background-color: #ffffff;
+    width: 60%;
+    padding: 3%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.postRight a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-style: italic;
+
+    letter-spacing: 0.035em;
+    text-align: left;
+}
+
+.postRight small {
+    color: grey;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 300;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */

@@ -53,7 +53,7 @@ export default function Home({ allPostsData }) {
                 <ul>
                     {allPostsData.map(({ id, date, title, url }) => (
                         <li key={id}>
-                            <div className={home.postLeft}></div>
+                            <div className={home.postLeft}>{/* image */}</div>
                             <div className={home.postRight}>
                                 <Link href={`/posts/${id}`}>{title}</Link>
                                 <br />
