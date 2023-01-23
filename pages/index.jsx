@@ -7,7 +7,7 @@ import Image from "next/image";
 import Date from "../components/date";
 
 //styles
-import home from "../styles/home.module.css";
+import style from "../styles/home.module.css";
 
 //other
 import { getSortedPostsData } from "../lib/posts";
@@ -27,13 +27,13 @@ export async function getStaticProps() {
 
 export default function Home({ allPostsData }) {
     return (
-        <div className="home">
+        <div className={style.home}>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <title>LEVHAUSEN</title>
             </Head>
 
-            <header className={home.header}>
+            <header className={style.header}>
                 <h1>
                     this is <br />
                     <span>LEVHAUSEN</span>
@@ -42,20 +42,29 @@ export default function Home({ allPostsData }) {
                 <Image
                     priority
                     src="/images/profile.jpg"
-                    className={home.profileImg}
+                    className={style.profileImg}
                     height={144}
                     width={144}
                     alt=""
                 />
             </header>
 
-            <section className={home.posts}>
+            <section className={style.posts}>
                 <ul>
-                    {allPostsData.map(({ id, date, title, url }) => (
+                    {allPostsData.map(({ id, date, title, subtitle, url }) => (
                         <li key={id}>
-                            <div className={home.postLeft}>{/* image */}</div>
-                            <div className={home.postRight}>
+                            <div className={style.postLeft}>
+                                <Image
+                                    src="/images/1.jpeg"
+                                    height={180}
+                                    width={180}
+                                    alt=""
+                                />
+                            </div>
+                            <div className={style.postRight}>
                                 <Link href={`/posts/${id}`}>{title}</Link>
+                                <br />
+                                <p>{subtitle}</p>
                                 <br />
                                 <small>
                                     <Date dateString={date} />
