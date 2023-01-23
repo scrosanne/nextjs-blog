@@ -1,6 +1,8 @@
 ---
-title: "First Post"
-date: "2020-01-01"
+title: "medusa is something you don't want to miss"
+subtitle: "why no one cares about another single release"
+date: "2023-01-01"
+# url: "images/profile.jpg"
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
