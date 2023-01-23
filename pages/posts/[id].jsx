@@ -4,6 +4,11 @@ import Link from "next/link";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/date";
 
+//styles
+import content from "../../styles/content.module.css";
+
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 export async function getStaticProps({ params }) {
     // Add the "await" keyword like this:
     const postData = await getPostData(params.id);
@@ -15,6 +20,8 @@ export async function getStaticProps({ params }) {
     };
 }
 
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 export async function getStaticPaths() {
     const paths = getAllPostIds();
     return {
@@ -23,25 +30,46 @@ export async function getStaticPaths() {
     };
 }
 
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 export default function Post({ postData }) {
     return (
-        <>
+        <div className="content">
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <article>
-                <h1>{postData.title}</h1>
-                <div>
-                    <Date dateString={postData.date} />
-                </div>
-                <div
-                    dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-                />
-            </article>
+
+            <header className={content.header}>
+                <h1>
+                    {postData.title} <br />
+                    <span>
+                        <Date dateString={postData.date} />
+                    </span>
+                </h1>
+
+                <div></div>
+
+                {/* <Image
+                    priority
+                    src="/images/profile.jpg"
+                    className={home.profileImg}
+                    height={144}
+                    width={144}
+                    alt=""
+                /> */}
+            </header>
 
             <div>
                 <Link href="/">← Back to home</Link>
             </div>
-        </>
+
+            <article>
+                {/* <h1>{postData.subtitle}</h1> */}
+
+                <div
+                    dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+                />
+            </article>
+        </div>
     );
 }
