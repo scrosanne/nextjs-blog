@@ -1,16 +1,18 @@
 //next
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
 
 //components
 import Date from "../components/date";
-import Layout, { siteTitle } from "../components/layout";
 
 //styles
-import utilStyles from "../styles/utils.module.css";
+import home from "../styles/home.module.css";
 
 //other
 import { getSortedPostsData } from "../lib/posts";
+
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData();
@@ -21,44 +23,44 @@ export async function getStaticProps() {
     };
 }
 
+//- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 export default function Home({ allPostsData }) {
     return (
-        <Layout home>
+        <div className="home">
             <Head>
+                <link rel="icon" href="/favicon.ico" />
                 <title>LEVHAUSEN</title>
             </Head>
-            <section className={utilStyles.headingMd}>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                    asperiores nulla soluta tempora commodi hic porro
-                    necessitatibus omnis laborum voluptate aliquid similique,
-                    sint dignissimos quae minima obcaecati sequi corporis!
-                    Pariatur!
-                </p>
-                <p>
-                    (This is a sample website - you’ll be building a site like
-                    this on{" "}
-                    <a href="https://nextjs.org/learn">our Next.js tutorial</a>
-                    .)
-                </p>
-            </section>
 
-            <section
-                className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}
-            >
-                <h2 className={utilStyles.headingLg}>Blog</h2>
-                <ul className={utilStyles.list}>
+            <header className={home.header}>
+                <h1>
+                    this is <br />
+                    <span>LEVHAUSEN</span>
+                </h1>
+
+                <Image
+                    priority
+                    src="/images/profile.jpg"
+                    height={144}
+                    width={144}
+                    alt=""
+                />
+            </header>
+
+            <section className={home.posts}>
+                <ul>
                     {allPostsData.map(({ id, date, title }) => (
-                        <li className={utilStyles.listItem} key={id}>
+                        <li key={id}>
                             <Link href={`/posts/${id}`}>{title}</Link>
                             <br />
-                            <small className={utilStyles.lightText}>
+                            <small>
                                 <Date dateString={date} />
                             </small>
                         </li>
                     ))}
                 </ul>
             </section>
-        </Layout>
+        </div>
     );
 }

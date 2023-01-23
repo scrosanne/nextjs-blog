@@ -1,0 +1,12 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 50%;
+}
+
+.home {
+    background-color: #f8f8f8;
+}
