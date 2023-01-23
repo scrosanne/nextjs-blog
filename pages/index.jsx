@@ -42,6 +42,7 @@ export default function Home({ allPostsData }) {
                 <Image
                     priority
                     src="/images/profile.jpg"
+                    className={home.profileImg}
                     height={144}
                     width={144}
                     alt=""
@@ -50,13 +51,16 @@ export default function Home({ allPostsData }) {
 
             <section className={home.posts}>
                 <ul>
-                    {allPostsData.map(({ id, date, title }) => (
+                    {allPostsData.map(({ id, date, title, url }) => (
                         <li key={id}>
-                            <Link href={`/posts/${id}`}>{title}</Link>
-                            <br />
-                            <small>
-                                <Date dateString={date} />
-                            </small>
+                            <div className={home.postLeft}></div>
+                            <div className={home.postRight}>
+                                <Link href={`/posts/${id}`}>{title}</Link>
+                                <br />
+                                <small>
+                                    <Date dateString={date} />
+                                </small>
+                            </div>
                         </li>
                     ))}
                 </ul>
