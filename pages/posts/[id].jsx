@@ -5,7 +5,7 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/date";
 
 //styles
-import content from "../../styles/content.module.css";
+import style from "../../styles/content.module.css";
 
 //- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -34,12 +34,12 @@ export async function getStaticPaths() {
 
 export default function Post({ postData }) {
     return (
-        <div className="content">
+        <div className={style.content}>
             <Head>
                 <title>{postData.title}</title>
             </Head>
 
-            <header className={content.header}>
+            <header className={style.header}>
                 <h1>
                     {postData.title} <br />
                     <span>
@@ -59,17 +59,19 @@ export default function Post({ postData }) {
                 /> */}
             </header>
 
-            <div>
-                <Link href="/">← Back to home</Link>
-            </div>
+            <main>
+                <div className={style.backHome}>
+                    <Link href="/">← Back to home</Link>
+                </div>
 
-            <article>
-                {/* <h1>{postData.subtitle}</h1> */}
-
-                <div
-                    dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-                />
-            </article>
+                <article>
+                    <div
+                        dangerouslySetInnerHTML={{
+                            __html: postData.contentHtml,
+                        }}
+                    />
+                </article>
+            </main>
         </div>
     );
 }

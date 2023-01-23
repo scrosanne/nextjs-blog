@@ -24,3 +24,26 @@
     font-size: 0.5em;
     font-weight: 200;
 }
+
+.content {
+    background-color: #f8f8f8;
+    border: 5px dashed rgb(232, 232, 232);
+}
+
+.content main {
+    padding: 5%;
+    font-weight: 300;
+    line-height: 27px;
+    letter-spacing: 0.2em;
+    text-align: justified;
+}
+
+.backHome a {
+    letter-spacing: 0.1em;
+    font-style: italic;
+    font-weight: 600;
+    background-color: #caffd2;
+    text-decoration: none;
+    color: black;
+    padding: 1%;
+}
