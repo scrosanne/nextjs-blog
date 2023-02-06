@@ -34,19 +34,16 @@ export default function Home({ allPostsData }) {
             </Head>
 
             <header className={style.header}>
-                <h1>
-                    this is <br />
-                    <span>LEVHAUSEN</span>
-                </h1>
+                <h1>LEVHAUSEN</h1>
 
-                <Image
+                {/* <Image
                     priority
                     src="/images/profile.jpg"
                     className={style.profileImg}
                     height={144}
                     width={144}
                     alt=""
-                />
+                /> */}
             </header>
 
             <section className={style.posts}>

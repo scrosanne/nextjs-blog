@@ -1,37 +1,31 @@
 .home {
-    background-color: #f8f8f8;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        360deg,
+        #caffd2 1%,
+        rgba(255, 255, 255, 0.74) 90.45%
+    );
+    border: 2px solid black;
+    margin: 0.05%;
 }
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
-    padding: 3%;
-    background-color: #a7b5ff;
-
-    color: white;
+    padding: 0%;
+    color: rgb(0, 0, 0);
 }
 
 .header h1 {
-    font-size: 40px;
-    font-weight: 400;
-    letter-spacing: 0.105em;
-    text-align: left;
-
-    padding-left: 3%;
-}
-
-.header h1 span {
+    font-size: 1vw;
     font-weight: 900;
-    padding-left: 20%;
-}
+    letter-spacing: 0.305em;
 
-.profileImg {
-    border: 2px solid white;
-    border-radius: 50%;
-
-    margin-right: 3%;
+    text-decoration: line-through;
+    font-size: 4.5vw;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
