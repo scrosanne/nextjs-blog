@@ -1,12 +1,13 @@
 .home {
     min-height: 100vh;
+    width: 40vw;
 
     background: linear-gradient(
         360deg,
         #caffd2 1%,
         rgba(255, 255, 255, 0.74) 90.45%
     );
-    border: 2px solid black;
+    border: 1px solid black;
     /* border-radius: 10px; */
     margin: 0.05%;
 }
@@ -27,12 +28,12 @@
     letter-spacing: 0.305em;
 
     text-decoration: line-through;
-    font-size: 4.8vw;
+    font-size: 4vw;
 }
 
 .header h1:hover {
     cursor: pointer;
-    /* text-decoration: none; */
+    text-decoration: none;
     color: #caffd2;
     transition: 0.4s;
 }
@@ -43,12 +44,10 @@
 }
 
 .posts ul li {
-    min-height: 200px;
-
     background-color: #ededed;
     list-style-type: none;
 
-    margin: 2% 5% 5% 5%;
+    margin: 3% 5% 7% 5%;
 
     border: 3px solid rgb(0, 0, 0);
     /* border-radius: 10px; */
@@ -58,19 +57,14 @@
 }
 
 .posts ul li:hover {
-    box-shadow: 11px 13px 0px 0px #585858c3;
+    box-shadow: 10px 12px 0px 0px #585858c3;
     transition: 0.2s;
     cursor: pointer;
 }
 
 .postLeft {
     border-right: 3px solid rgb(0, 0, 0);
-    width: 40%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    min-width: 35%;
 }
 
 .postLeft img {
@@ -79,15 +73,16 @@
 }
 
 .postRight {
-    /* background-color: #ffffff; */
     width: 65%;
     padding: 3%;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    word-break: word-break;
 }
 
+/* titel as link */
 .postRight a {
     color: black;
     text-transform: uppercase;
@@ -101,6 +96,7 @@
     text-align: left;
 }
 
+/* subtitle */
 .postRight p {
     color: rgba(122, 122, 122, 1);
     font-size: 17px;
