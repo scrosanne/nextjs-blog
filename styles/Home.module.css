@@ -7,6 +7,7 @@
         rgba(255, 255, 255, 0.74) 90.45%
     );
     border: 2px solid black;
+    /* border-radius: 10px; */
     margin: 0.05%;
 }
 
@@ -20,40 +21,61 @@
 }
 
 .header h1 {
+    margin: 1%;
     font-size: 1vw;
     font-weight: 900;
     letter-spacing: 0.305em;
 
     text-decoration: line-through;
-    font-size: 4.5vw;
+    font-size: 4.8vw;
+}
+
+.header h1:hover {
+    cursor: pointer;
+    /* text-decoration: none; */
+    color: #caffd2;
+    transition: 0.4s;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .posts ul {
-    padding: 5%;
+    padding: 0;
 }
 
 .posts ul li {
-    /* background-color: aliceblue; */
+    min-height: 200px;
+
+    background-color: #ededed;
     list-style-type: none;
-    padding: 3%;
-    margin: 1% 5% 10% 5%;
-    border: 3px solid white;
+
+    margin: 2% 5% 5% 5%;
+
+    border: 3px solid rgb(0, 0, 0);
+    /* border-radius: 10px; */
 
     display: flex;
     justify-content: space-between;
+}
 
-    height: 200px;
+.posts ul li:hover {
+    box-shadow: 11px 13px 0px 0px #585858c3;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .postLeft {
-    /* background-color: #a7b5ff; */
+    border-right: 3px solid rgb(0, 0, 0);
     width: 40%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.postLeft img {
+    width: 100%;
+    height: 100%;
 }
 
 .postRight {
@@ -89,11 +111,12 @@
     text-align: left;
 }
 
+/* date */
 .postRight small {
-    color: grey;
+    color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 0.1em;
 }
 
