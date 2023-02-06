@@ -2,6 +2,7 @@
 title: "camping for noobs"
 subtitle: "a summer full of surprises"
 date: "2023-01-02"
+url: "/../public/images/profile.png"
 ---
 
 We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.

@@ -2,7 +2,7 @@
 title: "medusa is something you don't want to miss"
 subtitle: "why no one cares about another single release"
 date: "2023-01-01"
-# url: "images/profile.jpg"
+url: "/../public/images/1.png"
 ---
 
 more example text

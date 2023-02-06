@@ -52,7 +52,7 @@ export default function Home({ allPostsData }) {
                         <li key={id}>
                             <div className={style.postLeft}>
                                 <Image
-                                    src="/images/1.jpeg"
+                                    src={url}
                                     height={180}
                                     width={180}
                                     alt=""
