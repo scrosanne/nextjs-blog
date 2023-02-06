@@ -167,16 +167,16 @@
 
 @media (min-width: 992px) {
     .home {
-        width: 70vw;
+        width: 50vw;
         border: 2px solid black;
         margin: 0.05%;
     }
 }
 
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .home {
         width: 60vw;
         border: 2px solid black;
         margin: 0.05%;
     }
-}
+} */
