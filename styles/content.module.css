@@ -1,6 +1,10 @@
 .content {
-    background-color: #f8f8f8;
-    border: 5px dashed rgb(232, 232, 232);
+    min-height: 100vh;
+    max-width: 40vw;
+
+    background-image: linear-gradient(#caffd2d1, #f8f8f886 25%);
+    border: 2px solid rgb(0, 0, 0);
+    margin: 0.05%;
 }
 
 .content main {
@@ -17,9 +21,6 @@
     align-items: center;
 
     padding: 3%;
-    background-color: #caffd2;
-
-    color: white;
 }
 
 .header h1 {
@@ -35,14 +36,14 @@
 
 .header h1 span {
     font-size: 0.5em;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .backHome a {
     letter-spacing: 0.1em;
     font-style: italic;
     font-weight: 600;
-    background-color: #caffd2;
+    background-color: #ffffff;
     text-decoration: none;
     color: black;
     padding: 1%;
