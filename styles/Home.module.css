@@ -29,6 +29,12 @@
 
     text-decoration: line-through;
     font-size: 4vw;
+    color: black;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
 }
 
 .header h1:hover {
@@ -123,8 +129,17 @@
     margin: 3rem auto 6rem;
 }
 
-.backToHome {
-    margin: 3rem 0 0;
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.home footer {
+    background-color: black;
+    padding: 30px;
+    margin-top: 10%;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    gap: 2%;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */

@@ -1,3 +1,8 @@
+//social icons https://jaketrent.github.io/react-social-icons/
+import React from "react";
+import ReactDOM from "react-dom";
+import { SocialIcon } from "react-social-icons";
+
 //next
 import Link from "next/link";
 import Head from "next/head";
@@ -34,7 +39,9 @@ export default function Home({ allPostsData }) {
             </Head>
 
             <header className={style.header}>
-                <h1>LEVHAUSEN</h1>
+                <Link href={`/about`}>
+                    <h1>LEVHAUSEN</h1>
+                </Link>
 
                 {/* <Image
                     priority
@@ -71,6 +78,21 @@ export default function Home({ allPostsData }) {
                     ))}
                 </ul>
             </section>
+
+            <footer>
+                <SocialIcon
+                    url="https://www.instagram.com/levhausen/"
+                    bgColor="#caffd2d1"
+                />
+                <SocialIcon
+                    url="https://open.spotify.com/artist/0CJguffLP0pVBf09ZhOl0k?si=uE-OTKAaTDKAktAeG_SM-Q"
+                    bgColor="#caffd2d1"
+                />
+                <SocialIcon
+                    url="https://www.youtube.com/channel/UC2KLtb2v-DiBmjnp7Kutebw"
+                    bgColor="#caffd2d1"
+                />
+            </footer>
         </div>
     );
 }

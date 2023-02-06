@@ -57,3 +57,12 @@
         margin: 0.05%;
     }
 }
+
+.backHome a {
+    background-color: white;
+}
+
+.backHome a:hover {
+    background-color: #a59bff;
+    transition: 0.4s;
+}
