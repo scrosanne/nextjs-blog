@@ -35,12 +35,12 @@ export default function Home({ allPostsData }) {
         <div className={style.home}>
             <Head>
                 <link rel="icon" href="/favicon.ico" />
-                <title>LEVHAUSEN</title>
+                <title>BLOGTITLE</title>
             </Head>
 
             <header className={style.header}>
                 <Link href={`/about`}>
-                    <h1>LEVHAUSEN</h1>
+                    <h1>BLOGTITLE</h1>
                 </Link>
 
                 {/* <Image

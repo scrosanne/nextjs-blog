@@ -1,14 +1,12 @@
 ---
-title: "camping for noobs"
-subtitle: "a summer full of surprises"
+title: "some nice headline here"
+subtitle: "a summer full of surprises and another short story"
 date: "2023-01-02"
-url: "/../public/images/profile.png"
+url: "/../public/images/2.png"
 ---
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam unde earum sed eveniet eaque laborum labore expedita asperiores reprehenderit, a commodi dolorem officia ad id, est similique cupiditate saepe voluptatibus at cumque repellat repellendus. Cumque commodi repellendus placeat hic dolores, quos perferendis ad, nemo neque sed tempora! Hic ex eaque quo! Aliquam veniam atque iure libero fuga nam quo voluptate, excepturi labore consequatur consectetur sed perferendis magnam. Unde, temporibus inventore ipsam, eaque ut atque pariatur reiciendis voluptatem consequatur soluta magni natus!
 
-You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
+Dolore saepe nulla vero tempore deserunt consequuntur delectus esse modi cumque consequatur quod maxime aspernatur magnam natus explicabo, dolorem sit labore assumenda inventore iste perspiciatis asperiores adipisci suscipit. Laudantium sint optio corporis. Praesentium impedit maiores voluptates exercitationem quo quisquam autem neque, expedita nam accusamus. Itaque placeat qui in atque temporibus consequatur debitis consequuntur fugiat, ex magni, adipisci exercitationem tempora culpa! Ullam, eligendi nulla? Illum cumque quos aut quis quam, explicabo facere accusamus. Fugiat maiores saepe unde consequatur ex omnis, voluptas rem minima exercitationem! Unde minus, accusantium laborum nihil, aliquam nostrum doloribus repellendus culpa modi, itaque est dolore doloremque dicta illum sequi?
 
-On the other hand, Static Generation is **not** a good idea if you cannot pre-render a page ahead of a user's request. Maybe your page shows frequently updated data, and the page content changes on every request.
-
-In that case, you can use **Server-Side Rendering**. It will be slower, but the pre-rendered page will always be up-to-date. Or you can skip pre-rendering and use client-side JavaScript to populate data.
+Repellat magnam ducimus eligendi iste, nam tempora molestiae. Suscipit at vel dicta officiis vitae tempore atque molestias, blanditiis aut pariatur consectetur iusto veritatis autem ad architecto alias temporibus fugiat doloribus itaque reiciendis debitis dolor iure dolore. Ratione dicta sint incidunt ea perspiciatis doloremque perferendis natus est nemo omnis repellat aliquam numquam error, vero voluptatum consectetur laboriosam illum, recusandae, dolores nobis aliquid vel assumenda velit quos! Iste delectus odit mollitia ea laborum, perferendis saepe vel error enim? Quaerat enim atque adipisci deserunt, blanditiis quibusdam fugiat quos error. Ea dolor quo, soluta esse repellat amet corrupti dolorem autem nulla velit, porro reprehenderit saepe harum cumque repudiandae eligendi aperiam assumenda ut impedit a ipsum, facilis quidem! Harum labore sunt blanditiis nisi numquam vel debitis alias ipsa. Quis nulla sunt a reiciendis ullam nisi aliquam earum at minus, officiis qui explicabo labore, quod nihil obcaecati adipisci non. Quasi in voluptates nostrum cum voluptatem, optio commodi consectetur eveniet iste similique vitae dignissimos repellat iusto excepturi tenetur, nesciunt accusamus aut ab explicabo! Consequatur, aperiam sunt dicta corporis doloremque.

@@ -1,14 +1,10 @@
 ---
-title: "medusa is something you don't want to miss"
-subtitle: "why no one cares about another single release"
+title: "this is something you don't want to miss"
+subtitle: "exciting news that will make you day"
 date: "2023-01-01"
 url: "/../public/images/1.png"
 ---
 
-more example text
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam unde earum sed eveniet eaque laborum labore expedita asperiores reprehenderit, a commodi dolorem officia ad id, est similique cupiditate saepe voluptatibus at cumque repellat repellendus. Cumque commodi repellendus placeat hic dolores, quos perferendis ad, nemo neque sed tempora! Hic ex eaque quo! Aliquam veniam atque iure libero fuga nam quo voluptate, excepturi labore consequatur consectetur sed perferendis magnam.
 
-**Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-**Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
-
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+Unde, temporibus inventore ipsam, eaque ut atque pariatur reiciendis voluptatem consequatur soluta magni natus! Dolore saepe nulla vero tempore deserunt consequuntur delectus esse modi cumque consequatur quod maxime aspernatur magnam natus explicabo, dolorem sit labore assumenda inventore iste perspiciatis asperiores adipisci suscipit. Laudantium sint optio corporis. Praesentium impedit maiores voluptates exercitationem quo quisquam autem neque, expedita nam accusamus. Itaque placeat qui in atque temporibus consequatur debitis consequuntur fugiat, ex magni, adipisci exercitationem tempora culpa! Ullam, eligendi nulla? Illum cumque quos aut quis quam, explicabo facere accusamus. Fugiat maiores saepe unde consequatur ex omnis, voluptas rem minima exercitationem! Unde minus, accusantium laborum nihil, aliquam nostrum doloribus repellendus culpa modi, itaque est dolore doloremque dicta illum sequi? Repellat magnam ducimus eligendi iste, nam tempora molestiae. Suscipit at vel dicta officiis vitae tempore atque molestias, blanditiis aut pariatur consectetur iusto veritatis autem ad architecto alias temporibus fugiat doloribus itaque reiciendis debitis dolor iure dolore. Ratione dicta sint incidunt ea perspiciatis doloremque perferendis natus est nemo omnis repellat aliquam numquam error, vero voluptatum consectetur laboriosam illum, recusandae, dolores nobis aliquid vel assumenda velit quos! Iste delectus odit mollitia ea laborum, perferendis saepe vel error enim? Quaerat enim atque adipisci deserunt.
